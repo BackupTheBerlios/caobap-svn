@@ -1,0 +1,23 @@
+Ca marche avec une applet javacard sur des fonctions qui ne prennent pas d'argument et qui renvoi un tableau de byte...
+
+Reste a faire :
+
+=> pour le servant generic
+- gerer tous les types de retour possible ( Lire l'idl pour les connaitres, le compilateur jacORB le permet mais je n'est pas reussi a l'utiliser, pas de pbs au niveau javacard )
+- gerer les arguments ( pareil lire l'idl, pas de pbs au niveau javacard )
+
+=> pour le mode static
+- compiler l'idl et faire un servant static ( blocage sur le compilateur )
+
+=> pour le mode dii
+- enregistrer enregistrer l'idl dans l'ir
+
+=> pour le mode mixte
+- faire dii + static
+
+=> en general
+- lister les applets de la carte ( ne fonctionne pas)+ creer des instances ( fonctionne dans COA.exemple()) + supprimer les instances ( genere des erreurs ) + recuper l'idl + le descripteur d'instruction (.ins ) sur la carte
+
+=> Optionnel
+- essayer d'utiliser OpenCARD ou MUSCLE pour acceder au carte ( peut etre pose moins de pbs que l'api schlumberger )
+

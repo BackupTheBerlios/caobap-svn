@@ -1,0 +1,8 @@
+module test
+{
+	interface SimpleSring
+	{
+		string getString ();
+		void setString(in string str);
+	};
+};
